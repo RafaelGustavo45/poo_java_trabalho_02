@@ -1,0 +1,44 @@
+      
+    } else {
+      int a = 0;
+      while (a < 3){
+      System.out.println("voce escolheu adicionar ganho");
+      System.out.println("qual foi o ganho?");
+      String ganho = leitor2.nextLine();
+      System.out.println("-------------------------");
+      System.out.println("qual foi o tipo?");
+      String tipo = leitor2.nextLine();
+      System.out.println("-------------------------");
+      System.out.println("data: ano?");
+      int ano = leitor2.nextInt();
+      System.out.println("-------------------------");
+      System.out.println("data: mes?");
+      int mes = leitor2.nextInt();
+      System.out.println("-------------------------");
+      System.out.println("data: dia?");
+      int dia = leitor2.nextInt();
+      System.out.println("-------------------------");
+      System.out.println("qual foi o valor?");
+      double valor = leitor3.nextDouble();
+      System.out.println("-------------------------");
+      //mostrando as variaveis para confirmar
+      System.out.println("ano: "+ ano +" mes: "+ mes + " dia: " + dia + " valor: "+ valor + " tipo: "+ tipo + " ganho: "+ ganho);
+      //criando o objeto aqui
+      Ganho ganho_temporario = new Ganho(ganho, tipo, ano, mes, dia, valor);
+      System.out.println("testando metodo toString");
+      System.out.println(ganho_temporario.toString());
+      //colocando na lista
+      listaGanho.add(ganho_temporario);
+      System.out.println("-----------------------------");
+      System.out.println("quer adicionar mais? (1= não/0 = sim)");
+      int confirmar = leitor4.nextInt();
+      if (confirmar == 0){
+        System.out.println("continuando...");
+      } else {
+        a = 10;
+        }
+
+      }
+      
+    }
+} }
